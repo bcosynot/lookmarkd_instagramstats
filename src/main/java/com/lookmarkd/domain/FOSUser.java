@@ -17,5 +17,27 @@ public class FOSUser implements Serializable {
     @Column(name = "instagram_access_token", nullable = true)
     private String instagramAccessToken;
 
+    public long getId() {
+        return id;
+    }
 
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getInstagramAccessToken() {
+        return instagramAccessToken;
+    }
+
+    public void setInstagramAccessToken(String instagramAccessToken) {
+        this.instagramAccessToken = instagramAccessToken;
+    }
 }
