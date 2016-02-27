@@ -1,3 +1,6 @@
 .gradle
 .idea
 lookmarkd-instagramstats.iml
+lookmarkd-instagramstats.ipr
+lookmarkd-instagramstats.iws
+build
