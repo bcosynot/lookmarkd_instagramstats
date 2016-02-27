@@ -8,8 +8,11 @@ import java.io.Serializable;
 @Entity(name = "fos_user")
 public class FOSUser implements Serializable {
 
+    private static final long serialVersionUID = 4635206975487297268L;
+
     @Id
-    private long id;
+    @Column(name="id")
+    private int id;
 
     @Column(name = "username", nullable = false)
     private String username;
@@ -17,11 +20,11 @@ public class FOSUser implements Serializable {
     @Column(name = "instagram_access_token", nullable = true)
     private String instagramAccessToken;
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

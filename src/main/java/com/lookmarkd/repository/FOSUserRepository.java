@@ -2,9 +2,9 @@ package com.lookmarkd.repository;
 
 import com.lookmarkd.domain.FOSUser;
 import org.springframework.data.repository.PagingAndSortingRepository;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-@Component
+@Repository
 public interface FOSUserRepository extends PagingAndSortingRepository<FOSUser, Long> {
     public FOSUser findByUsername(String username);
 }
